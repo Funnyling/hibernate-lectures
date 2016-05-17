@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>setting-session</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

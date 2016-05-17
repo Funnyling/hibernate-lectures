@@ -19,6 +19,4 @@ public class SettingEntityManager {
         entityManager.close();
         emf.close();
     }
-
-
 }

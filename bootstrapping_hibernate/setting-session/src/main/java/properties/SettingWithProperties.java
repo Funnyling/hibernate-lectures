@@ -13,8 +13,8 @@ public class SettingWithProperties {
         Configuration cfg = new Configuration().addAnnotatedClass(Message.class);
 
         SessionFactory factory = cfg.buildSessionFactory();
-
         Session session = factory.openSession();
+
         Message helloWorld = session.get(Message.class, 1);
         System.out.println(helloWorld);
 

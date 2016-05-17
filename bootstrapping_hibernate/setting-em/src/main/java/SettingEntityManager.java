@@ -10,7 +10,7 @@ import javax.persistence.Persistence;
 public class SettingEntityManager {
 
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("manager1");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistence-unit");
         EntityManager entityManager = emf.createEntityManager();
 
         Message helloWorld = entityManager.find(Message.class, 1);

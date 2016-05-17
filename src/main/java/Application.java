@@ -2,21 +2,25 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 /**
  * @author ntishkevich
  */
 public class Application {
     public static void main(String[] args) {
-//        Configuration cfg = new Configuration()
-//                .addAnnotatedClass(Message.class)
-//                .setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL94Dialect")
-//                .setProperty("hibernate.connection.driver_class", "org.postgresql.Driver")
-//                .setProperty("hibernate.connection.url", "jdbc:postgresql://localhost:5432/postgres?currentSchema=hibernate_lectures")
-//                .setProperty("hibernate.connection.username", "postgres")
-//                .setProperty("hibernate.connection.password", "postgres");
-
         Configuration cfg = new Configuration()
-                .addAnnotatedClass(Message.class);
+                .addAnnotatedClass(Message.class)
+                .setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL94Dialect")
+                .setProperty("hibernate.connection.driver_class", "org.postgresql.Driver")
+                .setProperty("hibernate.connection.url", "jdbc:postgresql://localhost:5432/postgres?currentSchema=hibernate_lectures")
+                .setProperty("hibernate.connection.username", "postgres")
+                .setProperty("hibernate.connection.password", "12345");
+
+//        Configuration cfg = new Configuration()
+//                .addAnnotatedClass(Message.class);
 
 //        Configuration cfg = new Configuration().configure("hibernate.cfg.xml")
 //                .addAnnotatedClass(Message.class);
@@ -27,6 +31,12 @@ public class Application {
         Message helloWorld = session.get(Message.class, 1);
         System.out.println(helloWorld);
         session.close();
+
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("manager1");
+        EntityManager entityManager = emf.createEntityManager();
+        helloWorld = entityManager.find(Message.class, 1);
+        System.out.println(helloWorld);
+        entityManager.close();
     }
 
 

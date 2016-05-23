@@ -10,7 +10,7 @@ import org.hibernate.cfg.Configuration;
 public class SettingWithXml {
     public static void main(String[] args) {
 
-        Configuration cfg = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Message.class);
+        Configuration cfg = new Configuration().configure("hibernate.cfg.xml");
 
         SessionFactory factory = cfg.buildSessionFactory();
         Session session = factory.openSession();

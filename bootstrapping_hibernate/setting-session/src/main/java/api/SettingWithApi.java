@@ -10,8 +10,8 @@ import org.hibernate.cfg.Configuration;
  * @author ntishkevich
  */
 public class SettingWithApi {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         Configuration cfg = new Configuration().addAnnotatedClass(Message.class)
                 .setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL94Dialect")
                 .setProperty("hibernate.connection.driver_class", "org.postgresql.Driver")

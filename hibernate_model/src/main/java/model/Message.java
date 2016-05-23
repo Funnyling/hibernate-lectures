@@ -19,8 +19,7 @@ public class Message {
     @Column(name = "text")
     private String text;
 
-    public Message() {
-    }
+    public Message() {}
 
     public Integer getId() {
         return id;
@@ -46,7 +45,6 @@ public class Message {
         Message message = (Message) o;
 
         return id.equals(message.id);
-
     }
 
     @Override

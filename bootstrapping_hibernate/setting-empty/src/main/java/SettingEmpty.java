@@ -12,7 +12,7 @@ import org.hibernate.service.ServiceRegistry;
 public class SettingEmpty {
 
     public static void main(String[] args) {
-        Configuration cfg = new Configuration().addClass(Message.class);
+        Configuration cfg = new Configuration();
 
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                 .applySettings(cfg.getProperties()).build();

@@ -17,6 +17,8 @@
         <module>setting-session</module>
         <module>setting-em</module>
         <module>setting-empty</module>
+        <module>setting-session-api</module>
+        <module>setting-session-xml</module>
     </modules>
 
 

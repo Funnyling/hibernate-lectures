@@ -4,13 +4,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @author ntishkevich
  */
 @Entity
 @Table(name = "message", schema = "hibernate_lectures")
-public class Message {
+public class Message implements Serializable {
 
     @Id
     @Column(name = "id")

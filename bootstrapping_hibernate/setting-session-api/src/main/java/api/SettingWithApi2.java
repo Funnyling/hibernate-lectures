@@ -23,7 +23,7 @@ public class SettingWithApi2 {
         properties.put("hibernate.connection.driver_class", "org.postgresql.Driver");
         properties.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/postgres?currentSchema=hibernate_lectures");
         properties.put("hibernate.connection.username", "postgres");
-        properties.put("hibernate.connection.password", "12345");
+        properties.put("hibernate.connection.password", "postgres");
 
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                 .applySettings(properties).build();

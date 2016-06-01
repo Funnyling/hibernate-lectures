@@ -17,7 +17,7 @@ public class SettingWithApi {
                 .setProperty("hibernate.connection.driver_class", "org.postgresql.Driver")
                 .setProperty("hibernate.connection.url", "jdbc:postgresql://localhost:5432/postgres?currentSchema=hibernate_lectures")
                 .setProperty("hibernate.connection.username", "postgres")
-                .setProperty("hibernate.connection.password", "12345");
+                .setProperty("hibernate.connection.password", "postgres");
 
         SessionFactory factory = cfg.buildSessionFactory();
         Session session = factory.openSession();

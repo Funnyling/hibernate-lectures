@@ -20,6 +20,7 @@
     <modules>
         <module>bootstrapping_hibernate</module>
         <module>hibernate_model</module>
+        <module>inheritance</module>
     </modules>
     <dependencyManagement>
         <dependencies>

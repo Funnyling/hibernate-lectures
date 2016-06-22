@@ -1,5 +1,6 @@
 package joined_table;
 
+import javax.annotation.Generated;
 import javax.persistence.*;
 import java.io.Serializable;
 

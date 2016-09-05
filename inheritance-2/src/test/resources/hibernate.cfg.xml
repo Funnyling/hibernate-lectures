@@ -10,12 +10,6 @@
         <property name="hibernate.connection.password">postgres</property>
         <property name="hibernate.cache.use_second_level_cache">false</property>
 
-        <property name="c3p0.max_size">20</property>
-        <property name="c3p0.min_size">5</property>
-        <property name="c3p0.timeout">300</property>
-        <property name="c3p0.max_statements">50</property>
-        <property name="c3p0.idle_test_period">3000</property>
-
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
@@ -38,6 +32,11 @@
         <mapping class="single_table.Animal"/>
         <mapping class="single_table.Fox"/>
         <mapping class="single_table.Cat"/>
+
+        <!--table per class-->
+        <mapping class="table_per_class.Animal"/>
+        <mapping class="table_per_class.Fox"/>
+        <mapping class="table_per_class.Cat"/>
 
     </session-factory>
 </hibernate-configuration>

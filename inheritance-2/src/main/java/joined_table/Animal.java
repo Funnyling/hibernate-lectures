@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @author ntishkevich
  */
 @MappedSuperclass
-@Table(name = "j_animal", schema = "hibernate_lectures")
+@Table(name = "jt_animal", schema = "hibernate_lectures")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Animal implements Serializable {
 

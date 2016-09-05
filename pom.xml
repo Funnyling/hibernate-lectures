@@ -20,7 +20,7 @@
     <modules>
         <module>bootstrapping_hibernate</module>
         <module>hibernate_model</module>
-        <module>inheritance</module>
+        <module>inheritance-2</module>
     </modules>
     <dependencyManagement>
         <dependencies>

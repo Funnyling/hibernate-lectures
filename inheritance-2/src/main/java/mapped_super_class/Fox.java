@@ -1,4 +1,4 @@
-package table_per_class;
+package mapped_super_class;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +8,7 @@ import javax.persistence.Table;
  * @author ntishkevich
  */
 @Entity
-@Table(name = "fox", schema = "hibernate_lectures")
+@Table(name = "super_class_fox", schema = "hibernate_lectures")
 public class Fox extends Animal {
 
     @Column(name = "zoo_name")

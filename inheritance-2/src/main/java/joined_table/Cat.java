@@ -8,8 +8,8 @@ import javax.persistence.Table;
 /**
  * @author ntishkevich
  */
-@Entity(name = "j_cat")
-@Table(name = "j_cat", schema = "hibernate_lectures")
+@Entity(name = "jt_cat")
+@Table(name = "jt_cat", schema = "hibernate_lectures")
 @PrimaryKeyJoinColumn(name = "id")
 public class Cat extends Animal {
 

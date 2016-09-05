@@ -8,7 +8,7 @@ import javax.persistence.Table;
  * @author ntishkevich
  */
 @Entity
-@Table(name = "cat", schema = "hibernate_lectures")
+@Table(name = "table_per_class_cat", schema = "hibernate_lectures")
 public class Cat extends Animal {
 
     @Column(name = "instagram_link", length = 500)

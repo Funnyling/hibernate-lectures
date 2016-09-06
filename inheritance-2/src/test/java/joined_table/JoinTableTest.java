@@ -1,6 +1,7 @@
 package joined_table;
 
 import base_test.BaseTest;
+import org.junit.Test;
 
 /**
  * @author ntishkevich

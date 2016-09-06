@@ -4,6 +4,7 @@ import org.hibernate.Session;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.Test;
 
 import static utils.HibernateUtils.closeFactory;
 import static utils.HibernateUtils.closeSession;
@@ -27,6 +28,7 @@ public abstract class BaseTest {
         closeSession(session);
     }
 
+    @Test
     public abstract void load();
 
     @AfterClass
